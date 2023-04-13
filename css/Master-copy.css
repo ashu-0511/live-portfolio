@@ -1,0 +1,240 @@
+
+/* Global styles 
+--------------------------*/
+a{
+    text-decoration: none;  
+}
+a:hover{
+    color: darkblue;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+*{
+    margin: 0; 
+    padding: 0;
+    line-height: 2; 
+}
+
+p{
+    line-height: 1.5;
+}
+img{
+    width: 300px;
+   height: 250px;
+    border-radius: 20px;
+} 
+.content-wrap{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 75%;
+    padding: 40px 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+/* header */
+header{
+    position: sticky;
+    top: 0; 
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+    
+}
+.container{
+    width: 80%;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+    padding-top: 30px;
+    display: flex;
+   
+}
+
+.nav-heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-right: auto;
+}
+.nav-content{
+    padding-left: 30px;
+}
+.nav-content li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+.nav-content a{
+   margin: 0;
+   padding: 0;
+}
+.hidden-btn{
+    display: none;
+}
+/*------------  banner --------------*/
+.banner{
+    background: #F5F5F5;  
+    background-image: url(../images/pexels-tobi-619950.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: white;   
+   position: relative;
+   height: 500px;
+   display: flex;
+   align-items: center;
+}
+.banner::before{
+    background: rgba(31,44,108,.50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+.banner .content-wrap{
+    font-size: 38px;
+}
+.text-content{
+    position: relative;
+   object-fit: cover;
+   
+}
+
+.text-content h1 {
+    line-height: 1.5;
+   color: white ;
+   text-align: center;
+   font-size: 54px;
+   font-weight: 700;
+  letter-spacing: 1px;
+   font-family: 'Poppins', sans-serif;
+   }
+/************ About ************/
+
+.article-list li {
+    list-style-type: none;
+  font-family: none; 
+ }
+ 
+ .about{
+    text-align: center;
+    padding: 10px;
+    
+ }
+ 
+/* PROJECTS / PORTFOLIO 
+--------------------------*/
+.projects{
+    background:white ;
+}
+.projects .btn{
+    color: #F7FFF7;
+    background: #273061;
+    text-decoration: none;
+    padding: 2px 30px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 15px;
+    letter-spacing: -1px;
+}
+.project-content .content p{
+    line-height: 1.5;
+    font-size: 18px;
+}
+.projects .project-content:nth-child(even) .content{
+    order: -1;
+}
+
+.divider {
+    border-bottom:  1px  dashed black; 
+    padding: 10px;
+}
+.project-content{
+    margin-top: 20px; 
+}
+.project-content img{
+    object-fit: contain;
+   object-position: top;
+}
+.paint{
+    font-size: 14px;
+}
+.content a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+/* EDUCATION & CERTIFICATIONS
+--------------------------*/
+.Education {
+    background: #F5F5F5;
+    background-image: url(../images/education\ background\ image.jpeg);
+    background-size: cover;
+    background-position: top right;
+}
+
+/* CONTACT INFO / SOCIAL MEDIA
+--------------------------*/
+footer{
+    background: white;
+    text-align: center;
+    color: black;  
+}
+.contact-item{
+    list-style-type: none;
+    padding: 0;  
+}
+footer h2{
+    padding: 25px;
+}
+.contact-item{
+    display: flex;
+    justify-content: center; 
+   }
+.contact-item a{
+    margin: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:black;
+}
+i:hover{
+    color: blue;
+}
+/*********** Responsive **********/
+@media screen and (min-width:750px)
+ {
+    .project-content{
+        overflow: hidden;
+        display: flex;
+        gap: 30px;
+    }
+   
+}
+@media screen and (max-width:750px)
+{
+    .header-text{
+        font-size: 14px;
+    }
+    .hidden-btn {
+        display: block;
+       }
+     .nav-content a{
+        display: none;
+     }
+    
+}
+
